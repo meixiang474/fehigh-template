@@ -11,6 +11,9 @@
     <HelloWorld />
     <UserComponent />
     <el-button>button</el-button>
+    <i-mdi-account :style="{ color: 'red', fontSize: '1.5rem' }" />
+    <i-ri24-hours-line />
+    <i-material-symbols10k />
   </div>
 </template>
 
