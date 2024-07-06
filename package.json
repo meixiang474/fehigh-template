@@ -27,6 +27,7 @@
     "@iconify-json/material-symbols": "^1.1.83",
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/ri": "^1.1.21",
+    "@iconify/json": "^2.2.225",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.7",

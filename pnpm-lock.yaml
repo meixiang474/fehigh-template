@@ -36,6 +36,9 @@ importers:
       '@iconify-json/ri':
         specifier: ^1.1.21
         version: 1.1.21
+      '@iconify/json':
+        specifier: ^2.2.225
+        version: 2.2.225
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.10.3
@@ -504,6 +507,9 @@ packages:
 
   '@iconify-json/ri@1.1.21':
     resolution: {integrity: sha512-ssU2CRaB4T83Q3cncCZtITholhYkH6gEL5XLmdMII6Xzn8bTCpDCkt+HdX4URc24uUMD0PGIaNLJUIAgdfLMjQ==}
+
+  '@iconify/json@2.2.225':
+    resolution: {integrity: sha512-3MxzXdrxDxItlGxvTmLnbZGlvGcwuBIOofJfyobq097lysZasvsNddFguiWecmKP91nRR4I2ik7enFVQ9Lz3mg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3378,6 +3384,11 @@ snapshots:
   '@iconify-json/ri@1.1.21':
     dependencies:
       '@iconify/types': 2.0.0
+
+  '@iconify/json@2.2.225':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 
