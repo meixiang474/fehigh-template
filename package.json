@@ -18,6 +18,7 @@
   "dependencies": {
     "@unocss/reset": "^0.61.2",
     "@vueuse/core": "^10.11.0",
+    "element-plus": "^2.7.6",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"

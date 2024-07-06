@@ -10,6 +10,7 @@
     <p>isOutside: {{ isOutside }}</p>
     <HelloWorld />
     <UserComponent />
+    <el-button>button</el-button>
   </div>
 </template>
 
