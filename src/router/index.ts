@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { routes } from 'vue-router/auto-routes'
+import { routes, handleHotUpdate } from 'vue-router/auto-routes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,5 +20,9 @@ const router = createRouter({
   //   }
   // ]
 })
+
+if (import.meta.hot) {
+  handleHotUpdate(router)
+}
 
 export default router

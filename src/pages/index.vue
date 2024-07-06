@@ -1,10 +1,20 @@
 <template>
-  <RouterLink to="/">home</RouterLink>
-  <RouterLink to="/about">about</RouterLink>
-  <div>hello world</div>
-  <div class="text-3xl font-bold underline">hello</div>
+  <div ref="target">
+    <RouterLink to="/">home</RouterLink>
+    <RouterLink to="/about">about</RouterLink>
+    <div>hello world</div>
+    <div>{{ msg }}</div>
+    <div class="text-3xl font-bold underline">hello</div>
+    <p>x: {{ x }}</p>
+    <p>y: {{ y }}</p>
+    <p>isOutside: {{ isOutside }}</p>
+    <HelloWorld />
+    <UserComponent />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+const msg = ref('auto import')
+const target = ref<HTMLElement | null>(null)
+const { x, y, isOutside } = useMouseInElement(target)
 </script>
