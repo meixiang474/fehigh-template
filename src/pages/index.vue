@@ -21,12 +21,23 @@
     <!-- Twemoji of laugh, turns to tear on hovering -->
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
   </div>
+  <Child @clickCount="handleClick" />
 </template>
 
 <script setup lang="ts">
+defineOptions({
+  name: 'HomeIndex'
+})
+
+// defineRender(() => <div>hello</div>)
+
 const msg = ref('auto import')
 const target = ref<HTMLElement | null>(null)
 const { x, y, isOutside } = useMouseInElement(target)
+
+const handleClick = (num: number) => {
+  console.log(num)
+}
 </script>
 
 <route lang="yaml">
