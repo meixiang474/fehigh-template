@@ -22,6 +22,7 @@
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
   </div>
   <Child @clickCount="handleClick" />
+  <div>hello</div>
 </template>
 
 <script setup lang="ts">

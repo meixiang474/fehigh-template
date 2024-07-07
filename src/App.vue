@@ -2,4 +2,5 @@
 
 <template>
   <RouterView />
+  <ReloadPrompt />
 </template>
