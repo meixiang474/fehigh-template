@@ -7,3 +7,8 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 </script>
+
+<route lang="yaml">
+meta:
+  layout: home
+</route>
