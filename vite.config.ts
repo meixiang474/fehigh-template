@@ -9,7 +9,7 @@ import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Layouts from 'vite-plugin-vue-layouts'
 import UnoCSS from 'unocss/vite'
-import VueMacros from 'unplugin-vue-macros/vite'
+// import VueMacros from 'unplugin-vue-macros/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { viteMockServe } from 'vite-plugin-mock'
 
@@ -17,12 +17,15 @@ import { viteMockServe } from 'vite-plugin-mock'
 export default defineConfig({
   plugins: [
     VueRouter(),
-    VueMacros({
-      plugins: {
-        vue: vue(),
-        vueJsx: vueJsx()
-      }
-    }),
+    vue(),
+    vueJsx(),
+    // vue3.3以后不需要了
+    // VueMacros({
+    //   plugins: {
+    //     vue: vue(),
+    //     vueJsx: vueJsx()
+    //   }
+    // }),
     UnoCSS(),
     AutoImport({
       include: [
